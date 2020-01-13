@@ -1,0 +1,17 @@
+<div class="contenedor">
+    <h1>{{comicTitle}} : {{comicYear}}</h1>
+<br>
+    <div>
+        <img class="comic" src="{{comicImg}}" alt="" srcset="">
+    </div>
+<br>
+    <h1>Que te parecio?</h1>
+
+    <div class="contenedorEstrellas">
+        <img class="estrella" (click)="flat2[0] ? cambioEstrella(1): alerta(1)" (mouseout)="flat ? mouseoverEstrella(1): fuente()" (mouseover)="flat ? mouseoutEstrella(1): fuente()" [src]="estrellaUrl[0] ? estrellaSinColorear: estrellaColoreada" alt="">
+        <img class="estrella" (click)="flat2[1] ? cambioEstrella(2): alerta(2)" (mouseout)="flat ? mouseoverEstrella(2): fuente()" (mouseover)="flat ? mouseoutEstrella(2): fuente()" [src]="estrellaUrl[1] ? estrellaSinColorear: estrellaColoreada" alt="">
+        <img class="estrella" (click)="flat2[2] ? cambioEstrella(3): alerta(3)" (mouseout)="flat ? mouseoverEstrella(3): fuente()" (mouseover)="flat ? mouseoutEstrella(3): fuente()" [src]="estrellaUrl[2] ? estrellaSinColorear: estrellaColoreada" alt="">
+        <img class="estrella" (click)="flat2[3] ? cambioEstrella(4): alerta(4)" (mouseout)="flat ? mouseoverEstrella(4): fuente()" (mouseover)="flat ? mouseoutEstrella(4): fuente()" [src]="estrellaUrl[3] ? estrellaSinColorear: estrellaColoreada" alt="">
+        <img class="estrella" (click)="flat2[4] ? cambioEstrella(5): alerta(5)" (mouseout)="flat ? mouseoverEstrella(5): fuente()" (mouseover)="flat ? mouseoutEstrella(5): fuente()" [src]="estrellaUrl[4] ? estrellaSinColorear: estrellaColoreada" alt="">
+    </div>
+</div>
